@@ -7,7 +7,7 @@ body {
   color: #444;
 }
 b {
-  font-weight: 600;
+  font-weight: 700;
 }
 hr {
   border-top: 1px solid #CCC;
@@ -21,7 +21,7 @@ h2 {
 }
 
 .paper_title {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 14px;
 }
 .paper_abbr {
