@@ -1,10 +1,13 @@
 @import url("./font-awesome.min.css");
 body {
-  font-family: 'Nunito', sans-serif;
-  /* font-family: 'Lato', sans-serif; */
-  font-size: 15px;
-  font-weight: 300;
+  /* font-family: 'Nunito', sans-serif; */
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
   color: #444;
+}
+b {
+  font-weight: bold;
 }
 hr {
   border-top: 1px solid #CCC;
@@ -19,11 +22,15 @@ h2 {
 
 .paper_title {
   font-weight: bold;
-  font-size: 16px;
-}
-.paper_abbr {
   font-size: 13px;
 }
+.paper_abbr {
+  font-size: 10px;
+}
+.paper_rest {
+  font-size: 13px;
+}
+
 
 .container {
   margin-bottom: 50px;
