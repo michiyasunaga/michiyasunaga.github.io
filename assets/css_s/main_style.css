@@ -36,6 +36,9 @@ h2 {
     height: 110px;
     position: relative;
     }
+td {
+    line-height: 120%;
+}
 
 .container {
   margin-bottom: 50px;
