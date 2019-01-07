@@ -1,0 +1,112 @@
+<!DOCTYPE html><!--Author: Pranav Rajpurkar 2016--><html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <title>ScisummNet</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/layout.css">
+    <!-- <link rel="stylesheet" href="stylesheets/index.css"> -->
+    <link href='https://fonts.googleapis.com/css?family=Nunito:100,200,300,400,500,600,700,800,900,100italic,100,300italic,400italic,500italic,900italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900,100italic,100,300italic,400italic,500italic,900italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:100,200,300,400,500,600,700,800,900,100italic,100,300italic,400italic,500italic,900italic,700italic' rel='stylesheet' type='text/css'>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top" id="topNavbar" role="navigation">
+        <div class="container clearfix" id="navContainer">
+            <div class="leftNav">
+                <div class="brandDiv"><a class="navbar-brand" href="index.html">ScisummNet</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cover" id="topCover">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 id="appTitle">ScisummNet</h1>
+                    <h2 id="appSubtitle">Yale Scisumm Dataset</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cover">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-1"></div>
+                <div class="col-xs-10">
+                    <div class="infoHeadline">
+                        <h2>Background: What is Scisumm?</h2>
+                    </div>
+                    <p>
+                        A summary of scientific papers should ideally incorporate the impact of the papers on the research community reflected by citations.
+                        To facilitate research in citation-aware scientific paper summarization (Scisumm), the
+                        <a href="https://github.com/WING-NUS/scisumm-corpus"> CL-Scisumm shared task</a> has been organized since 2014 for papers in the computational linguistics and NLP domain.
+                    <p>
+                    </p>
+                        The latest CL-Scisumm 2018 task contains 40 NLP papers with citation sentences and human-annotated reference summaries. Participants develop systems that automatically produce summaries using the original papers and their citation information.
+                    </p>
+
+                    <div class="infoHeadline">
+                        <h2>The ScisummNet Corpus</h2>
+                    </div>
+                    <p>
+                        At the <a href="https://yale-lily.github.io"> Yale LILY lab</a>, we have expanded the CL-Scisumm project and developed the <b>first large-scale, human-annotated</b> Scisumm dataset, <i>ScisummNet</i>.
+                        It provides over 1,000 papers in
+                        <a href="http://aan.how">the ACL anthogoly network</a> with their citation networks (e.g. citation sentences, citation counts) and their comprehensive, manual summaries.
+                        <!-- To summarize, the novelties are:
+                        <ul>
+                            <li> significantly larger than the previous CL-SciSumm 2017 corpus</li>
+                            <li> more citation information is available</li>
+                        </ul> -->
+                    </p>
+                    <p>The following paper (AAAI 2019) introduces the corpus in detail and shows how ScisummNet enables the training of data-driven summarization models. <br />
+                        <a class="btn customizeBtn outlineBtn" href="../../files/papers/scisumm_aaai19_final.pdf">Read the paper</a>
+                    </p>
+
+                    <div class="infoHeadline"><h2>Getting Started</h2>
+                    </div>
+                    <p> Download the dataset (distributed under the  <a href="http://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a> license): <br />
+                        <a class="btn customizeBtn outlineBtn" href="https://drive.google.com/file/d/1IW0RLPmknL4b2djKYoI2sTkH38DXGmR-/view" download>ScisummNet ver1.0 (15 MB)</a>
+                        <!-- <a class="btn customizeBtn outlineBtn" href="https://drive.google.com/file/" download>ScisummNet ver1.0 (15 MB)</a> -->
+                        <br />
+                        When unzipped, the package contains a dataset description and subdirectories for the 1000 papers.
+                        Each paper directory contains the paper's PDF file, XML file, annotated citation information (in JSON format), and manual summay. Please see the included documentation for more detail.
+                    </p>
+                    <p> If you use the corpus for your work, please consider citing this paper.
+                    </p>
+                    <pre>
+@inproceedings{yasunaga&al.aaai19.scisumm,
+    title = {{ScisummNet}: A Large Annotated Corpus and Content-Impact Models for Scientific Paper Summarization with Citation Networks},
+    author = {Michihiro Yasunaga and Jungo Kasai and Rui Zhang and Alexander Fabbri and Irene Li and Dan Friedman and Dragomir Radev},
+    booktitle = {Proceedings of AAAI 2019},
+    year = {2019}
+}</pre>
+
+                    <div class="infoHeadline">
+                        <h2>Acknowledgment</h2>
+                    </div>
+                    <p>
+                        We are grateful to the developers of the <a href="https://rajpurkar.github.io/SQuAD-explorer/">SQuAD website</a>, from which this website design is adapted.
+                    </p><br>
+                </div>
+                <div class="col-xs-1"></div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-default navbar-static-bottom footer">
+        <div class="container clearfix">
+            <div class="rightNav">
+                <div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="https://yale-lily.github.io">Yale LILY lab</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+<!-- Localized -->
