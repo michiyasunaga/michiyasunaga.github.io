@@ -14,7 +14,7 @@ hr {
   border-top: 1px solid #CCC;
   padding: 0px;
   margin-bottom: 0px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 h2 {
@@ -40,7 +40,8 @@ td {          /* for table */
   font-weight: 700;
   font-size: 14px;
   /* color: #2a6496 */
-  color: #428bca
+  /* color: #428bca */
+  color: #2874a6 
 }
 .paper_rest {
   /* font-size: 13px; */
@@ -106,6 +107,9 @@ td {          /* for table */
   margin-top: -11px;
 }
 
+a{
+  color: #2874a6
+}
 
 ul {
   list-style: disc;
